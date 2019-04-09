@@ -19,6 +19,7 @@ pipeline {
                 anyOf {
                     triggeredBy cause: 'UserIdCause'
                     changeset "$MICROSERVICE/**"
+                    changeset 'Jenkinsfile'
                 }
             }
             stages {
